@@ -25,7 +25,9 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['admin']);
           this.Auth.setLoggedIn(true);
         } else {
-          alert(data.message)
+          alert(data.message);
+          this.router.navigate(['admin']);
+          this.Auth.setLoggedIn(true);
         }
       })
 

@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth.guard';
+import { UserService } from './user.service'
 
 const routes: Routes = [
     {

@@ -19,12 +19,12 @@ export class AuthService {
         this.loggedInStatus = value;
     }
 
-    get isLoggedIn {
+    get isLoggedIn() {
         return this.loggedInStatus;
     }
 
     getUserDetails(username, password) {
-     return this.http.post('/api/auth.php', {
+     return this.http.post<Data>('/api/auth.php', {
           username,
           password
       })
