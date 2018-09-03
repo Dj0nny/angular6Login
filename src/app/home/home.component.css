@@ -1,0 +1,28 @@
+a {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.home {
+    text-align: center;
+}
+
+.links ul li {
+    display: inline;
+    padding: 25px;
+}
+
+.button {
+    background-color: #a4a4a4;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.button a {
+    color: #fff;
+}

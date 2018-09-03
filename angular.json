@@ -23,9 +23,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/foundation/css/foundation.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/foundation/js/jquery.js",
+              "src/foundation/js/what-input.js",
+              "src/foundation/js/foundation.min.js"
+            ]
           },
           "configurations": {
             "production": {
