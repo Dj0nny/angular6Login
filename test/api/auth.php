@@ -12,7 +12,7 @@
 ?>
             {
                 "success": true,
-                "message" : "This is admin"
+                "message" : "admin"
             }
 <?php
         } else {

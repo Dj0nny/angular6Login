@@ -5,12 +5,12 @@
 
     if($user == 'admin') {
         echo '{
-            "message": "Message for the admin",
+            "message": "Welcome admin",
             "success": true
         }';
     } else if($user == 'notAdmin'){
         echo '{
-            "message": "who are you?",
+            "message": "Invalid credentials",
             "success": false
         }';
     }
