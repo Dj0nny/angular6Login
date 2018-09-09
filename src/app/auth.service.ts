@@ -6,10 +6,6 @@ interface Data {
     message: string
 }
 
-interface registerResponse {
-    success: boolean
-}
-
 @Injectable({
   providedIn: 'root'
 })
@@ -23,12 +19,10 @@ export class AuthService {
 
     setLoggedIn(value: boolean) {
         this.loggedInStatus = value;
-        //localStorage.setItem('loggedIn', 'true');
         this.loggedInStatus = value;
     }
 
     get isLoggedIn() {
-        //return JSON.parse(localStorage.getItem('loggedIn') || this.loggedInStatus.toString());
         return this.loggedInStatus;
     }
 
@@ -39,10 +33,4 @@ export class AuthService {
       });
     }
 
-    registerUser(username, password) {
-        return this.http.post<registerResponse>('/api/register', {
-            username, 
-            password
-        });
-    }
 }
